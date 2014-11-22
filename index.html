@@ -1,8 +1,43 @@
 <html>
 	<head>
 		<title>geooot</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css"></link>
+		<script src="js/bootstrap.min.js"></script>
+		<script data-require="jquery@*" src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/script.js"></script>
+		
+	
+	<style>
+		.blackbtn{
+			border-radius: 0px;
+			color:white;
+			background-color:black;
+			border-color:white;
+			border-width:3px;
+			-webkit-transition: border-width .2s; /* For Safari 3.1 to 6.0 */
+			transition: border-width .2s;
+		}
+		.blackbtn:hover{
+			border-width:6px;
+			background-color:black;
+			border-color:white;
+		}
+	</style>
 	</head>
-	<body>
-		<h1>Things to do: Everything/h1>
+	<body style = "background-color:black;">
+	<div class = "container">
+		<img src = "imgs/g.png" class = "center center-block" id="g"></img>
+		<div style = "margin-top:100px;">
+		<div class ="col-md-4">
+			<button class = "btn btn-primary btn-lg blackbtn center-block" id="btn1">Projects</button>
+		</div>
+		<div class ="col-md-4">
+			<button class = "btn btn-primary btn-lg blackbtn center-block" >Website</button>
+		</div>
+		<div class ="col-md-4">
+			<button class = "btn btn-primary btn-lg blackbtn center-block" >Blog</button>
+		</div>
+		</div>
+	</div>
 	</body>
 </html>

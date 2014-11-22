@@ -1,0 +1,9 @@
+$("document").ready(function(){
+	$("#btn1").hover(function(){
+		$("#g").animate(function(){
+			$(this).css('-webkit-transform','rotate('+90+'deg)'); 
+			$(this).css('-moz-transform','rotate('+90+'deg)');
+			$(this).css('transform','rotate('+90+'deg)');
+		},"linear")
+	})
+})
