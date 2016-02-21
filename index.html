@@ -2,203 +2,179 @@
 	<head>
 		<title>geooot</title>
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-		<link rel="stylesheet" href="css/materialize.min.css"></link>
-		<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bootstrap.min.css"></link>
 		<link rel="stylesheet" href="css/animate.css"></link>
 		<link rel="stylesheet" href="css/font-awesome.min.css"></link>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 		<meta name="theme-color" content="#4CAF50">
 		<meta name="msapplication-navbutton-color" content="#4CAF50">
 		<meta name="apple-mobile-web-app-status-bar-style" content="#4CAF50">
 		<style>
-			html{
-				font-family: 'Merriweather Sans', sans-serif;
+			body{
+				font-family: 'Open Sans', sans-serif ;
+			}
+			.center{
+				text-align:center;
+			}
+			.heading{
+				margin-top:20px;
+				margin-bottom:20px;
+			}
+			.bg{
+				background-image: url("imgs/bg.jpg");
+				background-size:cover;
+				background-repeat: no-repeat;
+			}
+			.container{
+				min-width:768px;
+			}
+			.nav {
+				display: inline-block;
+				float: none;
+			}
+
+			.nav{
+				text-align: center;
+			}
+			.white{
+				color:#FFFFFF;
+			}
+			.hover > li > a:hover {
+				color:#60e800;
+				background-color: rgba(0,0,0,0.3);
+				border-radius: 0px;
+			}
+			.hover > li > a {
+				color:white;
+				background-color: rgba(0,0,0,0.3);
+				border-radius: 0px;
+			}
+			.hover > li {
+				font-size:24px;
+				font-weight:300;
+			}
+			.twitter > a{
+				background-color:#1A93DD !important;
+				color:white !important;
+			}
+			.twitter > a:hover{
+				background-color:#1582c1 !important;
+				color:white !important;
+			}
+			.email > a{
+				background-color:#EC1E10 !important;
+				color:white !important;
+			}
+			.email > a:hover{
+				background-color:#ce180e !important;
+				color:white !important;
+			}
+			.banner{
+				width:100%;
+				height:150px;
+				padding:10px;
+				background-color:#e6e6e6;
+			}
+			.graded{
+				background-image:url("imgs/graded_banner.png");
+				background-size:cover;
+			}
+			.smash{
+				background-image:url("imgs/smash_banner.png");
+				background-size:cover;
+			}
+			p{
+				font-size:18px;
+			}
+			.itm{
+				margin-bottom:25px;
 			}
 		</style>
-
-
-
-
 	</head>
 	<body style=''>
-  	<section style='min-height:100%; background-image:url("imgs/bg.png")'>
-			<div class='container'>
-				<div style='padding-top:20%;color:white;'>
-					<h2 class='wow slideInLeft' style='font-weight:300;margin-bottom:10px;'>Hi there!</h2>
-					<h1 class='wow slideInLeft hide-on-small-and-down' style='margin-bottom:0px;margin-top:10px;'>My name is</h1>
-					<h2 class='wow slideInLeft hide-on-med-and-up' style='margin-bottom:0px;margin-top:10px;'>My name is</h2>
-					<h1 class = 'hide-on-small-and-down'style='margin-top:0px;'><b><span style='color:rgb(173, 234, 130)' class='wow bounceInLeft'>George Thayamkery.</span></b></h1>
-					<h2 class = 'hide-on-med-and-up'style='margin-top:0px;'><b><span style='color:rgb(173, 234, 130)' class='wow bounceInLeft'>George Thayamkery.</span></b></h2>
-					<div class='wow fadeInUp'>
-					<a href ='#projects'><button class='waves-effect waves-light btn-large green' style='margin-bottom:10px'><h5>SEE MY Projects</h5></button></a>
-					<a href ='#about'><button class='waves-effect waves-light btn-large  grey darken-4 white-text' style='margin-bottom:10px'><h5>About Me</h5></button></a>
-					<a href='#contact'><button class='waves-effect waves-light btn-large orange' style='margin-bottom:10px'><h5>Contact Me</h5></button></a>
-					</div>
-				</div>
+		<div class="row bg animated fadeInDown" style="margin-left:0px;margin-right:0px;">
+			<div class="center heading">
+				<img src = "imgs/g.png" height="20%"/>
+				</br>
+				<ul class="nav nav-pills hover">
+					<li role="presentation" >
+						<a href="#" class="white">LinkedIn</a>
+					</li>
+					<li role="presentation" >
+						<a href="https://github.com/geooot/" class="white">GitHub</a>
+					</li>
+					<li role="presentation" >
+						<a href="https://geooot.wordpress.com/" class="white">Blog</a>
+					</li>
+				</ul>
+				</br>
+
 			</div>
-	</section>
-	<section style='min-height:100%;' id='projects'>
-			<div class='container'>
-				<div style='padding-top:5%;'>
-				<h2 class='green-text wow slideInLeft'>My Projects</h2>
-				<div class='row wow slideInRight'>
-					<div class='col m4'>
-					  <div class="card">
-						<div class="card-image waves-effect waves-block waves-light">
-						  <img class="responsive-img activator" style='height:auto'src="http://i.imgur.com/gnblKe4.png">
+		</div>
+		<div class="container container-fluid animated fadeIn" style="margin-top:2%;min-width:0px;">
+			<div class="">
+				<h2 style="font-weight:300;">Hi! I'm <b>George Thayamkery.</b> I am a 15 year old high school student who codes.</h2>
+				<h2 style="margin-top:40px;font-weight:300;">I have dabbled with <span style="color:#2196F3">HTML/JS</span>, <span style="color:#FF9800">Python</span>, <span style="color:#4CAF50">Node JS</span>, and more. I hope to create meaningful products and expand my knowledge in Computer Science.</h2>
+				<h3 style="font-weight:400; margin-top:50px;">CONTACT</h3>
+				<ul class="nav nav-pills hover">
+					<li role="presentation" class="twitter" style="font-size:16px; margin-top:10px;" >
+						<a href="http://twitter.com/geooot_" class="white"><i class="fa fa-twitter"></i>&nbsp @geooot_</a>
+					</li>
+					<li role="presentation" class="email" style="font-size:16px; margin-top:10px;" >
+						<a href="mailto:george.thayamkery@gmail.com" class="white"><i class="fa fa-envelope"></i> &nbsp george.thayamkery@gmail.com</a>
+					</li>
+				</ul>
+				<div class="row" style="margin-top:50px;">
+					<div class="col-md-4">
+						<h3 style="font-weight:400;">FEATURED PROJECTS</h3>
+						<div class="panel panel-default">
+							<div class="banner graded">	
+							</div>
+							<div class="panel-heading">
+								<h3 class="panel-title"><a href="http://graded.us">Graded App</a></h3>
+							</div>
+							<div class="panel-body">
+								A mobile app I created in September 2015 that lets users easily check their grades without using the sluggy Home Access Center website. Graded now has over 3000 users.
+								</br>
+								<span class="label label-default">Apache Cordova</span> <span class="label label-danger">Angular JS</span> <span class="label label-warning">Python</span>
+							</div>
 						</div>
-						<div class="card-content">
-						  <span class="card-title activator grey-text text-darken-4">Graded<i class="material-icons right">more_vert</i></span>
-						  <p><a href="http://graded.us/">WEBSITE</a></p>
+						<div class="panel panel-default">
+							<div class="banner smash">	
+							</div>
+							<div class="panel-heading">
+								<h3 class="panel-title">SmashFights</h3>
+							</div>
+							<div class="panel-body">
+								A project I started in August 2015 that live streamed BOT Matches of Super Smash Bros Brawl and allowed viewers to interact by betting on bots with fake currency.
+								</br>
+								<span class="label label-primary">Node JS</span> <span class="label label-success">AutoHotKey</span> <span class="label label-warning">Python</span>
+							</div>
 						</div>
-						<div class="card-reveal">
-						  <span class="card-title grey-text text-darken-4">Graded - Check your HAC grades<i class="material-icons right">close</i></span>
-							<p>
-								The easiest and prettiest way to check your grades on Home Access Center (HAC). 
-							</p>
-							<p>
-								To start, all you need is your HAC login and the website url. No longer do you have to go through the website to check your grades, now you can just open the the app and see your grades nearly instantly.
-							</p>
-							<p>
-								Dependencies:
-								Your district must be using eSchool Home Access Center version 3.0
-							</p>
-						</div>
-					  </div>
+						
 					</div>
-					<div class='col m4'>
-					  <div class="card">
-						<div class="card-image waves-effect waves-block waves-light">
-						  <img class="responsive-img activator" style='height:auto' src="http://i.imgur.com/mh0hD6f.png" >
-						</div>
-						<div class="card-content">
-						  <span class="card-title activator grey-text text-darken-4">SmashFights<i class="material-icons right">more_vert</i></span>
-						  <p><a href="http://www.twitch.tv/smashfights">WEBSITE</a></p>
-						</div>
-						<div class="card-reveal">
-						  <span class="card-title grey-text text-darken-4">SmashFights<i class="material-icons right">close</i></span>
-							<p>
-								Bet on 4 Level 9 SmashBros BOTS that will fight! A completely automated node/python/js application that does things from manipulating the game to retrieving chat events through irc.  
-							</p>
-							<p>One of my best works</p>
-						</div>
-					  </div>
-					</div>
-					<div class='col m4'>
-					  <div class="card">
-						<div class="card-image waves-effect waves-block waves-light">
-						  <img class="responsive-img activator" style='height:auto' src="http://i.imgur.com/eEeMmhG.png" >
-						</div>
-						<div class="card-content">
-						  <span class="card-title activator grey-text text-darken-4">AndroSensorGTK<i class="material-icons right">more_vert</i></span>
-						  <p><a href="http://geooot.github.io/AndroSensorGTK">WEBSITE</a></p>
-						</div>
-						<div class="card-reveal">
-						  <span class="card-title grey-text text-darken-4">AndroSensorGTK<i class="material-icons right">close</i></span>
-							<p>
-								This python plugin reads the CSV information with the gyroscopic rotations and applies the values as key frames. This is very useful for hand held camera motion and has the possibility for better camera tracking. I plan to update this for even more functionality. One of my first python projects and my first with the bpy library
-							</p>
-						</div>
-					  </div>
+					<div class="col-md-8">
+						<h3 style="font-weight:400;">RECENT WORK</h3>
+						<p class="itm"><a href="/ButtonSmash/index.html">[CodeDay 24hr Code Jam] Made the ridiculous game, ButtonSmash</a><p>
+						<p class="itm"><a href="https://github.com/RHSCSTeam/cs-points">[RHS CS Team] Made a Programming point system </a><p>
+						<p class="itm"><a href="">[RHS CS Team] Competed in FriscoISD FirstBytes</a><p>
+						<p class="itm"><a href="http://graded.us">[Graded] Created Graded, A better way to check grades  </a></span><p>
+						<p class="itm"><a href="http://nepris.com">[Nepris] Interned at Nepris Inc and helped design web pages  </a><p>
+						<p class="itm"><a href="/AndroSensorGTK">[AndroSensorGTK] A small python script that imported gyroscope rotation data into Blender 3d  </a><p>
+						<p class="itm"><a href="https://github.com/geooot/InfinityStairs">[CS1] Created InfinityStairs, a small yet fun java game. </a><p>
 
 					</div>
 				</div>
-				<div class="row">
-				  <div class="col m12">
-					<div class="card-panel teal">
-					  <h4 class="white-text center">And many more on my <a href='https://github.com/geooot' class='orange-text'>GitHub</a> account!
-					  </h4>
-					</div>
-				  </div>
-				</div>
+			</div>
+		</div>
+		<footer style="margin-top:50px">
+			<div class="" style="background-color:#e6e6e6">
+				<div class="container container-fluid" style="min-width:0px;">
+					<h5 class="pull-left"><a href="http://twitter.com/geooot_">@geooot_</a></h5>
+					<h5 class="pull-right">&copy George Thayamkery</h5>
 				</div>
 			</div>
-	</section>
-	<section id="about" style='min-height:75%;background-image:url("imgs/bg2.png");'>
-			<div class='container'>
-				<div style='padding-top:5%'>
-				<h2 class='wow slideInLeft white-text'>About Me</h2>
-				<div class="row">
-					<div class="col s12 m6 wow slideInLeft" >
-					  <div class="card grey darken-1">
-						<div class="card-content white-text">
-						  <span class="card-title">Hello!</span>
-						  <p>I am a student at Reedy High School. I am very interested in the field of computer science.</p>
-						  <br>
-						  <p>Things I have dabbled in: </p>
-						  <p>HTML/JS, Python, Blender3D, Java, NodeJS, and Apache Cordova</p>
-						</div>
-					  </div>
-					</div>
-					<div class='col s12 m5 wow slideInRight'>
-						<img class='responsive-img z-index-1' style='margin-bottom:10px' src='https://avatars2.githubusercontent.com/u/7832610?v=3&u=463875fd7a7686b0edd55984e99abf60ed5bf2da&s=800'/>
-					</div>
-				  </div>
-				</div>
-			</div>
-	</section>
-	<section style='min-height:75%'id='contact'>
-			<div class='container'>
-				<div style='padding-top:10%'>
-				<h2 class='orange-text wow slideInLeft'>Contact Me</h2>
-				      <div class="row">
-						<div class="col m6 s12 wow slideInLeft">
-						  <div class="card orange darken-1">
-							<div class="card-content white-text">
-							  <span class="card-title">@geooot</span>
-							</div>
-							<div class="card-action white-text">
-							  <a href="https://twitter.com/geooot_" class='white-text'>Twitter</a>
-							  <a href="https://github.com/geooot" class='white-text'>GitHub</a>
-							</div>
-						  </div>
-						</div>
-						<div class="col m6 s12 wow slideInRight">
-						  <div class="card orange darken-3">
-							<div class="card-content white-text">
-							  <span class="card-title">Personal Email</span>
-							</div>
-							<div class="card-action ">
-							  <a href="mailto:george.thayamkery@gmail.com" class='white-text'>Email</a>
-							</div>
-						  </div>
-						</div>
-				</div>
-			</div>
-			
-	</section>
-	        <footer class="page-footer grey darken-4">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">geooot</h5>
-                <p class="grey-text text-lighten-4">Super sick website</p>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">Copyright George Thayamkery 2015
-            </div>
-          </div>
-        </footer>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-	<script src="js/materialize.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-	<script>
-		new WOW().init();
-
-		$(document).ready(function(){
-			$('.navbar-fixed').hide();
-			$(window).scroll(function () {
-				// set distance user needs to scroll before we fadeIn navbar
-				if ($(this).scrollTop() > 100) {
-					$('.navbar-fixed').fadeIn(200);
-				} else {
-					$('.navbar-fixed').fadeOut(100);
-				}
-			});
-		});
-	</script>
+		</footer>
 	</body>
 </html>
