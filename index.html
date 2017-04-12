@@ -17,14 +17,16 @@
 		<link rel="stylesheet" href="css/animate.css"></link>
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
 		<meta name="theme-color" content="#4CAF50">
 		<meta name="msapplication-navbutton-color" content="#4CAF50">
 		<meta name="apple-mobile-web-app-status-bar-style" content="#4CAF50">
+		<script src="https://use.fontawesome.com/86c6a7b69b.js"></script>
 		<style>
-			body{
-				font-family: 'Open Sans', sans-serif ;
-			}
+		body{
+			font-family: 'Roboto', sans-serif;
+
+		}
 			.center{
 				text-align:center;
 			}
@@ -33,9 +35,7 @@
 				margin-bottom:20px;
 			}
 			.bg{
-				background-image: url("imgs/bg.jpg");
-				background-size:cover;
-				background-repeat: no-repeat;
+				background-image: url("/imgs/dark_wall.png");
 			}
 			.container{
 				min-width:768px;
@@ -53,17 +53,23 @@
 			}
 			.hover > li > a:hover {
 				color:#60e800;
-				background-color: rgba(0,0,0,0.3);
+				background-color: transparent;
+				border-radius: 0px;
+			}
+			.hover > li > a:focus {
+				background-color: transparent;
 				border-radius: 0px;
 			}
 			.hover > li > a {
 				color:white;
-				background-color: rgba(0,0,0,0.3);
 				border-radius: 0px;
 			}
 			.hover > li {
 				font-size:24px;
 				font-weight:300;
+			}
+			.g-img{
+				width: 250px;
 			}
 			.twitter > a{
 				background-color:#1A93DD !important;
@@ -90,10 +96,22 @@
 			.graded{
 				background-image:url("imgs/graded_banner.png");
 				background-size:cover;
+				background-position-y: -50px;
 			}
-			.smash{
-				background-image:url("imgs/smash_banner.png");
+			.codescrim{
+				background-image:url("imgs/codescrim.png");
 				background-size:cover;
+				background-position-y: -125px;
+			}
+			.posted{
+				background-image:url("imgs/posted-bg.png");
+				background-size:cover;
+				background-position-y: -80px;
+			}
+			.layman{
+				background-image:url("imgs/layman.png");
+				background-size:cover;
+				background-position-y: -35px;
 			}
 			p{
 				font-size:18px;
@@ -101,22 +119,76 @@
 			.itm{
 				margin-bottom:25px;
 			}
+			.label{
+				font-weight: 300;
+				line-height: 32px;
+				font-size: 14px;
+			}
+			@media only screen and (max-width:450px) { 
+				.g-img{
+					width: 150px;
+				}
+				h2{
+					font-size: 22px !important;
+				}
+				.graded{
+					background-image:url("imgs/graded_banner.png");
+					background-size:cover;
+					background-position-y: -30px;
+				}
+				.codescrim{
+					background-image:url("imgs/codescrim.png");
+					background-size:cover;
+					background-position-y: -115px;
+				}
+				.posted{
+					background-image:url("imgs/posted-bg.png");
+					background-size:cover;
+					background-position-y: -70px;
+				}
+				.layman{
+					background-image:url("imgs/layman.png");
+					background-size:cover;
+					background-position-y: -30px;
+				}
+			}
+
+			@media only screen and (max-width:380px) { 
+				.graded{
+					background-image:url("imgs/graded_banner.png");
+					background-size:cover;
+					background-position-y: -30px;
+				}
+				.codescrim{
+					background-image:url("imgs/codescrim.png");
+					background-size:cover;
+					background-position-y: -95px;
+				}
+				.posted{
+					background-image:url("imgs/posted-bg.png");
+					background-size:cover;
+					background-position-y: -50px;
+				}
+				.layman{
+					background-image:url("imgs/layman.png");
+					background-size:cover;
+					background-position-y: -10px;
+				}
+			}
+
 		</style>
 	</head>
 	<body style=''>
 		<div class="row bg animated fadeInDown" style="margin-left:0px;margin-right:0px;">
 			<div class="center heading">
-				<img src = "imgs/g.png" height="20%"/>
+				<img src = "imgs/g.png" class="g-img"/>
 				</br>
 				<ul class="nav nav-pills hover">
 					<li role="presentation" >
-						<a target="_blank" href="https://www.linkedin.com/in/georgethayamkery" class="white">LinkedIn</a>
+						<a target="_blank" href="https://www.linkedin.com/in/georgebt" class="white">LinkedIn</a>
 					</li>
 					<li role="presentation" >
 						<a target="_blank" href="https://github.com/geooot/" class="white">GitHub</a>
-					</li>
-					<li role="presentation" >
-						<a target="_blank" href="http://blog.geooot.com/" class="white">Medium</a>
 					</li>
 					<li role="presentation" >
 						<a target="_blank" href="Resume.pdf" class="white">Resume</a>
@@ -130,55 +202,92 @@
 			<div class="">
 				<h2 style="font-weight:300;">Hi! I'm <b>George Thayamkery.</b> I am a 16 year old high school student who codes.</h2>
 				<h2 style="margin-top:40px;font-weight:300;">I have dabbled with <span style="color:#2196F3">HTML/JS</span>, <span style="color:#FF9800">Python</span>, <span style="color:#4CAF50">Node JS</span>, and more. I hope to create meaningful products and expand my knowledge in Computer Science.</h2>
-				<h3 style="font-weight:400; margin-top:50px;">CONTACT</h3>
-				<ul class="nav nav-pills hover">
-					<li role="presentation" class="twitter" style="font-size:16px; margin-top:10px;" >
-						<a target="_blank" href="http://twitter.com/geooot_" class="white"><i class="fa fa-twitter"></i>&nbsp @geooot_</a>
+				<h4 style="font-weight:800; margin-top:50px; color: #666; margin-bottom: 0px;">CONTACT</h4>
+				<ul class="nav nav-pills hover" >
+					<li role="presentation" class="twitter" style="font-size:16px; margin-top:10px; margin-right: 5px;" >
+						<a target="_blank" href="http://twitter.com/geooot_" class="white"><i class="fa fa-twitter fa-lg"></i>&nbsp @geooot_</a>
 					</li>
-					<li role="presentation" class="email" style="font-size:16px; margin-top:10px;" >
+					<li role="presentation" class="email" style="font-size:16px; margin-top:10px; margin-left: 0px;" >
 						<a target="_blank" href="mailto:george.thayamkery@gmail.com" class="white"><i class="fa fa-envelope"></i> &nbsp george.thayamkery@gmail.com</a>
 					</li>
 				</ul>
 				<div class="row" style="margin-top:50px;">
-					<div class="col-md-4">
-						<h3 style="font-weight:400;">FEATURED PROJECTS</h3>
+					
+					<h4 style="font-weight:800; margin-top:50px; color: #666; margin-bottom: 15px; margin-left: 15px;">FEATURED PROJECTS</h4>
+					<div class="col-md-6">	
 						<div class="panel panel-default">
 							<div class="banner graded">	
 							</div>
 							<div class="panel-heading">
-								<h3 class="panel-title"><a target="_blank" href="http://graded.us">Graded App</a></h3>
+								<h3 class="panel-title"><a target="_blank" href="http://graded.us">graded</a></h3>
 							</div>
 							<div class="panel-body">
-								A mobile app I created in September 2015 that lets users easily check their grades without using the sluggy Home Access Center website. Graded now has over 8000 users.
+								A mobile app I created in September 2015 that lets users easily check their grades without using the sluggy Home Access Center website. Graded now has over 18000 users.
 								</br>
-								<span class="label label-default">Apache Cordova</span> <span class="label label-danger">Angular JS</span> <span class="label label-warning">Python</span>
+								<span class="label label-default">Apache Cordova</span> <span class="label label-danger">Angular JS</span> <span class="label label-primary">HTML5</span>  <span class="label label-success">CSS3</span>  <span class="label label-warning">Python</span>
 							</div>
 						</div>
+					</div>
+					<div class="col-md-6">
 						<div class="panel panel-default">
-							<div class="banner smash">	
+							<div class="banner posted">	
 							</div>
 							<div class="panel-heading">
-								<h3 class="panel-title">SmashFights</h3>
+								<h3 class="panel-title">posted</h3>
 							</div>
 							<div class="panel-body">
-								A project I started in August 2015 that live streamed BOT Matches of Super Smash Bros Brawl and allowed viewers to interact by betting on bots with fake currency.
+								Posted is a mobile app that allows students to communicate with others in their classes. Currently in development
 								</br>
-								<span class="label label-primary">Node JS</span> <span class="label label-success">AutoHotKey</span> <span class="label label-warning">Python</span>
+								<span class="label label-default">Apache Cordova</span> <span class="label label-danger">Angular JS</span> <span class="label label-primary">HTML5</span>  <span class="label label-success">CSS3</span>  <span class="label label-primary">.NET</span> <span class="label label-primary" style="background-color: #0e8efd">Firebase</span>
 							</div>
 						</div>
 						
 					</div>
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="banner codescrim">	
+							</div>
+							<div class="panel-heading">
+								<h3 class="panel-title"><a target="_blank" href="http://codescrim.com">codescrim</a></h3>
+							</div>
+							<div class="panel-body">
+								Web application that allows computer science clubs to run automated coding competitions. Supports problem management, compilation, and a leaderboard.
+								</br>
+								<span class="label label-primary">HTML5</span> <span class="label label-danger">jQuery</span> <span class="label label-success">NodeJS</span> <span class="label label-success">CSS3</span> <span class="label label-primary" style="background-color: #0e8efd">Firebase</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="banner layman">	
+							</div>
+							<div class="panel-heading">
+								<h3 class="panel-title"><a target="_blank" href="/layman-script">layman-script</a></h3>
+							</div>
+							<div class="panel-body">
+								A sentence parser that identifies subjects and verbs and stores them into memory. Questions can also be queried in order to get certain responses.
+								</br>
+								<span class="label label-warning">Python</span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="row" style="margin-top: 10px;">
 					<div class="col-md-8">
-						<h3 style="font-weight:400;">RECENT WORK</h3>
-						<p class="itm"><a target="_blank" href="/layman-script">[layman-script] Made a simple English language parser</a><p>
+						<h4 style="font-weight:800; margin-top:50px; color: #666; margin-bottom: 15px;">RECENT ACTIVITIES</h4>
+						<p class="itm"><a target="_blank" href="http://github.com/geooot/qsearcher">[qsearcher] Made a small quizlet term scraper.</a><p>
+						<p class="itm"><a href="#">[UTD Battle of the Brains] Participated in UTD Spring Coding competition</a><p>
+						<p class="itm"><a  href="#">[CodeDay 2017] Won "0 to 60" award.</a><p>
+						<p class="itm"><a target="_blank" href="http://github.com/geooot/qsearcher">[Purch] Made a framework for generating media apps using Cordova.</a><p>
 						<p class="itm"><a target="_blank" href="/ButtonSmash/index.html">[CodeDay 24hr Code Jam] Made the ridiculous game, ButtonSmash</a><p>
 						<p class="itm"><a target="_blank" href="https://github.com/RHSCSTeam/cs-points">[RHS CS Team] Made a Programming point system </a><p>
-						<p class="itm"><a target="_blank" href="">[RHS CS Team] Competed in FriscoISD FirstBytes</a><p>
+						<p class="itm"><a  href="#">[RHS CS Team] Competed in FriscoISD FirstBytes</a><p>
 						<p class="itm"><a target="_blank" href="http://graded.us">[Graded] Created Graded, A better way to check grades  </a></span><p>
 						<p class="itm"><a target="_blank" href="http://nepris.com">[Nepris] Interned at Nepris Inc and helped design web pages  </a><p>
 						<p class="itm"><a target="_blank" href="/AndroSensorGTK">[AndroSensorGTK] A small python script that imported gyroscope rotation data into Blender 3d  </a><p>
 						<p class="itm"><a target="_blank" href="https://github.com/geooot/InfinityStairs">[CS1] Created InfinityStairs, a small yet fun java game. </a><p>
-
 					</div>
 				</div>
 			</div>
