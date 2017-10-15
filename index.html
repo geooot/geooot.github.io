@@ -11,20 +11,19 @@
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@geooot_">
 		<meta name="twitter:title" content="Hi I am George Thayamkery">
-		<meta name="twitter:description" content="I am a 16 year old high school student who codes.">
+		<meta name="twitter:description" content="I am a 17 year old high school student who codes.">
 		<meta name="twitter:image" content="https://avatars3.githubusercontent.com/u/7832610?v=3&s=400">
 		<link rel="stylesheet" href="css/bootstrap.min.css"></link>
 		<link rel="stylesheet" href="css/animate.css"></link>
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
 		<meta name="theme-color" content="#4CAF50">
 		<meta name="msapplication-navbutton-color" content="#4CAF50">
 		<meta name="apple-mobile-web-app-status-bar-style" content="#4CAF50">
 		<script src="https://use.fontawesome.com/86c6a7b69b.js"></script>
 		<style>
 		body{
-			font-family: 'Roboto', sans-serif;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 		}
 			.center{
@@ -33,9 +32,6 @@
 			.heading{
 				margin-top:20px;
 				margin-bottom:20px;
-			}
-			.bg{
-				background-image: url("/imgs/dark_wall.png");
 			}
 			.container{
 				min-width:768px;
@@ -49,7 +45,7 @@
 				text-align: center;
 			}
 			.white{
-				color:#FFFFFF;
+				color:#000;
 			}
 			.hover > li > a:hover {
 				color:#60e800;
@@ -61,7 +57,7 @@
 				border-radius: 0px;
 			}
 			.hover > li > a {
-				color:white;
+				color:#000;
 				border-radius: 0px;
 			}
 			.hover > li {
@@ -87,6 +83,22 @@
 				background-color:#ce180e !important;
 				color:white !important;
 			}
+			.btn-primary {
+				color: #fff;
+				background-color: rgba(96, 125, 139, 0);
+				border-color: #ffffff;
+			}
+			.btn-dark{
+				color: #333;
+				border-color: #333;
+			}
+
+			.desc{
+				color:white;
+			}
+			.desc-dark{
+				color:#333;
+			}
 			.banner{
 				width:100%;
 				height:150px;
@@ -94,14 +106,15 @@
 				background-color:#e6e6e6;
 			}
 			.graded{
-				background-image:url("imgs/graded_banner.png");
-				background-size:cover;
-				background-position-y: -50px;
+				background-image: url("imgs/graded.PNG");
+				background-size: cover;
+				background-position-x: 100%;
 			}
 			.codescrim{
-				background-image:url("imgs/codescrim.png");
-				background-size:cover;
-				background-position-y: -125px;
+				background-color: #363750;
+				background-size: cover;
+				background-position-x: 100%;
+				background-image: url("imgs/codescrim.png");
 			}
 			.posted{
 				background-image:url("imgs/posted-bg.png");
@@ -124,66 +137,58 @@
 				line-height: 32px;
 				font-size: 14px;
 			}
-			@media only screen and (max-width:450px) { 
-				.g-img{
-					width: 150px;
+
+			.logoType{
+				align-self:center
+			}
+			.pad{
+				margin-top:50px;
+			}
+			@media only screen and (max-device-width: 480px) {
+				.pad{
+				margin-top:25px;
 				}
-				h2{
-					font-size: 22px !important;
+				.logoType h2{
+				font-size: 20px !important;
 				}
-				.graded{
-					background-image:url("imgs/graded_banner.png");
-					background-size:cover;
-					background-position-y: -30px;
+				.jumbotron{
+				border-radius: 0px !important;
+				margin-bottom: 0px
 				}
-				.codescrim{
-					background-image:url("imgs/codescrim.png");
-					background-size:cover;
-					background-position-y: -115px;
+			}
+			@media only screen and (max-device-width: 1280px) {
+				.logo{
+				width: 175px;
 				}
-				.posted{
-					background-image:url("imgs/posted-bg.png");
-					background-size:cover;
-					background-position-y: -70px;
-				}
-				.layman{
-					background-image:url("imgs/layman.PNG");
-					background-size:cover;
-					background-position-y: -30px;
+				.desc{
+				font-size: 18px !important;
+				margin-top: 20px;
 				}
 			}
 
-			@media only screen and (max-width:380px) { 
-				.graded{
-					background-image:url("imgs/graded_banner.png");
-					background-size:cover;
-					background-position-y: -30px;
-				}
-				.codescrim{
-					background-image:url("imgs/codescrim.png");
-					background-size:cover;
-					background-position-y: -95px;
-				}
-				.posted{
-					background-image:url("imgs/posted-bg.png");
-					background-size:cover;
-					background-position-y: -50px;
-				}
-				.layman{
-					background-image:url("imgs/layman.PNG");
-					background-size:cover;
-					background-position-y: -10px;
-				}
+			.btn-primary:hover{
+				color: #00d1ff !important;
+				background-color: rgba(40, 96, 144, 0) !important;
+				border-color: #00d1ff !important;
 			}
-
+			.btn-primary:active{
+				color: #00d1ff !important;
+				background-color: rgba(0, 0, 0, 0.15) !important;
+				border-color: #00d1ff !important;
+			}
+			.btn-primary:focus {
+				color: #fff;
+				background-color: rgba(96, 125, 139, 0);
+				border-color: #ffffff;
+			}
 		</style>
 	</head>
 	<body style=''>
 		<div class="row bg animated fadeInDown" style="margin-left:0px;margin-right:0px;">
 			<div class="center heading">
-				<img src = "imgs/g.png" class="g-img"/>
+				<img src = "imgs/g_new.svg" class="g-img"/>
 				</br>
-				<ul class="nav nav-pills hover">
+				<ul class="nav nav-pills hover" style="margin-top: 20px;">
 					<li role="presentation" >
 						<a target="_blank" href="https://www.linkedin.com/in/georgebt" class="white">LinkedIn</a>
 					</li>
@@ -200,8 +205,8 @@
 		</div>
 		<div class="container container-fluid animated fadeIn" style="margin-top:2%;min-width:0px;">
 			<div class="">
-				<h2 style="font-weight:300;">Hi! I'm <b>George Thayamkery.</b> I am a 16 year old high school student who codes.</h2>
-				<h2 style="margin-top:40px;font-weight:300;">I have dabbled with <span style="color:#2196F3">HTML/JS</span>, <span style="color:#FF9800">Python</span>, <span style="color:#4CAF50">Node JS</span>, and more. I hope to create meaningful products and expand my knowledge in Computer Science.</h2>
+				<h2 style="font-weight:400;">Hi! I'm <b style="font-weight: 600">George Thayamkery.</b> I am a 16 year old high school student who codes.</h2>
+				<h2 style="margin-top:40px;font-weight:400;">I have dabbled with <span style="color:#2196F3">HTML/JS</span>, <span style="color:#FF9800">Python</span>, <span style="color:#4CAF50">Node JS</span>, and more. I hope to create meaningful products and expand my knowledge in Computer Science.</h2>
 				<h4 style="font-weight:800; margin-top:50px; color: #666; margin-bottom: 0px;">CONTACT</h4>
 				<ul class="nav nav-pills hover" >
 					<li role="presentation" class="twitter" style="font-size:16px; margin-top:10px; margin-right: 5px;" >
@@ -211,78 +216,35 @@
 						<a target="_blank" href="mailto:george.thayamkery@gmail.com" class="white"><i class="fa fa-envelope"></i> &nbsp george.thayamkery@gmail.com</a>
 					</li>
 				</ul>
-				<div class="row" style="margin-top:50px;">
-					
-					<h4 style="font-weight:800; margin-top:50px; color: #666; margin-bottom: 15px; margin-left: 15px;">FEATURED PROJECTS</h4>
-					<div class="col-md-6">	
-						<div class="panel panel-default">
-							<div class="banner graded">	
-							</div>
-							<div class="panel-heading">
-								<h3 class="panel-title"><a target="_blank" href="http://graded.us">graded</a></h3>
-							</div>
-							<div class="panel-body">
-								A mobile app I created in September 2015 that lets users easily check their grades without using the sluggy Home Access Center website. Graded now has over 18000 users.
-								</br>
-								<span class="label label-default">Apache Cordova</span> <span class="label label-danger">Angular JS</span> <span class="label label-primary">HTML5</span>  <span class="label label-success">CSS3</span>  <span class="label label-warning">Python</span>
-							</div>
+
+				<h4 style="font-weight:800; margin-top:100px; color: #666; margin-bottom: 15px;">FEATURED PROJECTS</h4>
+				
+				<div class="row" >
+						
+					<div class="jumbotron graded row">
+						<div class="col-md-6 col-sm-12">
+							  <img src="https://graded.us/images/gradedLogo_white.png" class="logo" width="250">
+							  <p class="desc">The easiest and prettiest way to check your grades from Home Access Center.</p>
+							  <p><a class="btn btn-primary btn-lg" href="http://graded.us" role="button">Learn more</a></p>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="panel panel-default">
-							<div class="banner posted">	
-							</div>
-							<div class="panel-heading">
-								<h3 class="panel-title">posted</h3>
-							</div>
-							<div class="panel-body">
-								Posted is a mobile app that allows students to communicate with others in their classes. Currently in development
-								</br>
-								<span class="label label-default">Apache Cordova</span> <span class="label label-danger">Angular JS</span> <span class="label label-primary">HTML5</span>  <span class="label label-success">CSS3</span>  <span class="label label-primary">.NET</span> <span class="label label-primary" style="background-color: #0e8efd">Firebase</span>
-							</div>
+					<div class="jumbotron codescrim row">
+						<div class="col-md-6 col-sm-12">
+							  <img src="imgs/codescrim_logo_light.png" class="logo" width="250"/>
+							  <p class="desc">Allowing schools, communities, and computer science lovers to make teams and host coding competitions</p>
+							  <p><a class="btn btn-primary btn-lg" href="https://codescrim.com">Learn More</a></p>
 						</div>
-						
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="panel panel-default">
-							<div class="banner codescrim">	
-							</div>
-							<div class="panel-heading">
-								<h3 class="panel-title"><a target="_blank" href="http://codescrim.com">codescrim</a></h3>
-							</div>
-							<div class="panel-body">
-								Web application that allows computer science clubs to run automated coding competitions. Supports problem management, compilation, and a leaderboard.
-								</br>
-								<span class="label label-primary">HTML5</span> <span class="label label-danger">jQuery</span> <span class="label label-success">NodeJS</span> <span class="label label-success">CSS3</span> <span class="label label-primary" style="background-color: #0e8efd">Firebase</span>
-							</div>
-						</div>
-						
-					</div>
-					<div class="col-md-6">
-						<div class="panel panel-default">
-							<div class="banner layman">	
-							</div>
-							<div class="panel-heading">
-								<h3 class="panel-title"><a target="_blank" href="/layman-script">layman-script</a></h3>
-							</div>
-							<div class="panel-body">
-								A sentence parser that identifies subjects and verbs and stores them into memory. Questions can also be queried in order to get certain responses.
-								</br>
-								<span class="label label-warning">Python</span>
-							</div>
-						</div>
-						
-					</div>
-				</div>
+
 				<div class="row" style="margin-top: 10px;">
-					<div class="col-md-8">
-						<h4 style="font-weight:800; margin-top:50px; color: #666; margin-bottom: 15px;">RECENT ACTIVITIES</h4>
+					<div class="col-md-12">
+						<h4 style="font-weight:800; margin-top:25px; color: #666; margin-bottom: 15px;">RECENT ACTIVITIES</h4>
+						<p class="itm"><a target="_blank" href="https://shopsavvy.com">[Purch] Programmed features for the ShopSavvy iOS app.</a><p>							
 						<p class="itm"><a target="_blank" href="http://github.com/geooot/qsearcher">[qsearcher] Made a small quizlet term scraper.</a><p>
 						<p class="itm"><a href="#">[UTD Battle of the Brains] Participated in UTD Spring Coding competition</a><p>
 						<p class="itm"><a  href="#">[CodeDay 2017] Won "0 to 60" award.</a><p>
-						<p class="itm"><a target="_blank" href="http://github.com/geooot/qsearcher">[Purch] Made a framework for generating media apps using Cordova.</a><p>
+						<p class="itm"><a target="_blank" href="https://purch.com">[Purch] Made a framework for generating media apps using Cordova.</a><p>
 						<p class="itm"><a target="_blank" href="/ButtonSmash/index.html">[CodeDay 24hr Code Jam] Made the ridiculous game, ButtonSmash</a><p>
 						<p class="itm"><a target="_blank" href="https://github.com/RHSCSTeam/cs-points">[RHS CS Team] Made a Programming point system </a><p>
 						<p class="itm"><a  href="#">[RHS CS Team] Competed in FriscoISD FirstBytes</a><p>
