@@ -58,7 +58,7 @@ window.onload = function(){
 			var p = particles[i];
 			//ctx.moveTo(p.x, p.y);
 			//ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
-      		ctx.font = p.r*10 + "px monospace";
+      		ctx.font = "monospace " +p.r*10 + "px Roboto Mono";
       		ctx.fillText(getRandomIntInclusive(0,1),p.x,p.y);
 		}
 		ctx.fill();
