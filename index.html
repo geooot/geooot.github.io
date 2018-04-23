@@ -66,6 +66,7 @@
 			}
 			.g-img{
 				width: 250px;
+				animation: squigglevision 0.8s infinite alternate-reverse;
 			}
 			.twitter > a{
 				background-color:#1A93DD !important;
@@ -181,12 +182,98 @@
 				background-color: rgba(96, 125, 139, 0);
 				border-color: #ffffff;
 			}
+			@keyframes squigglevision {
+				0% {
+					filter: url("#turbulence-1");
+				}
+				10% {
+					filter: url("#turbulence-2");
+				}
+				20% {
+					filter: url("#turbulence-3");
+				}
+				30% {
+					filter: url("#turbulence-4");
+				}
+				40% {
+					filter: url("#turbulence-5");
+				}
+				50% {
+					filter: url("#turbulence-6");
+				}
+				60% {
+					filter: url("#turbulence-7");
+				}
+				70% {
+					filter: url("#turbulence-8");
+				}
+				80% {
+					filter: url("#turbulence-9");
+				}
+				90% {
+					filter: url("#turbulence-10");
+				}
+				100% {
+					filter: url("#turbulence-11");
+				}
+			}
 		</style>
 	</head>
 	<body style=''>
-		<div class="row bg animated fadeInDown" style="margin-left:0px;margin-right:0px;">
+		<svg display="none">
+			<filter id="turbulence-1">
+				<feTurbulence type="fractalNoise" baseFrequency="0.001" numOctaves="2" data-filterId="3" />
+				<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+			</filter>
+			
+			<filter id="turbulence-2">
+				<feTurbulence type="fractalNoise" baseFrequency="0.0015" numOctaves="2" data-filterId="3" />
+				<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+			</filter>
+			
+			<filter id="turbulence-3">
+				<feTurbulence type="fractalNoise" baseFrequency="0.0020" numOctaves="2" data-filterId="3" />
+				<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+			</filter>
+			
+			<filter id="turbulence-4">
+				<feTurbulence type="fractalNoise" baseFrequency="0.0035" numOctaves="2" data-filterId="3" />
+				<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+			</filter>
+			
+			<filter id="turbulence-5">
+				<feTurbulence type="fractalNoise" baseFrequency="0.0043" numOctaves="2" data-filterId="3" />
+				<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+			</filter>
+
+			<filter id="turbulence-6">
+				<feTurbulence type="fractalNoise" baseFrequency="0.0036" numOctaves="2" data-filterId="3" />
+				<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+			</filter>
+			
+			<filter id="turbulence-7">
+				<feTurbulence type="fractalNoise" baseFrequency="0.0031" numOctaves="2" data-filterId="3" />
+				<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+			</filter>
+			
+			<filter id="turbulence-8">
+				<feTurbulence type="fractalNoise" baseFrequency="0.002243" numOctaves="2" data-filterId="3" />
+				<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+			</filter>
+			
+			<filter id="turbulence-9">
+				<feTurbulence type="fractalNoise" baseFrequency="0.0037" numOctaves="2" data-filterId="3" />
+				<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+			</filter>
+			
+			<filter id="turbulence-10">
+				<feTurbulence type="fractalNoise" baseFrequency="0.0042" numOctaves="2" data-filterId="3" />
+				<feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
+			</filter>
+		</svg>
+		<div class="row bg" style="margin-left:0px;margin-right:0px;">
 			<div class="center heading">
-				<img src = "imgs/g_new.svg" class="g-img"/>
+				<img src="imgs/pp_vector.svg" class="g-img"/>
 				</br>
 				<ul class="nav nav-pills hover" style="margin-top: 20px;">
 					<li role="presentation" >
@@ -203,9 +290,9 @@
 
 			</div>
 		</div>
-		<div class="container container-fluid animated fadeIn" style="margin-top:2%;min-width:0px;">
+		<div class="container container-fluid" style="margin-top:2%;min-width:0px;">
 			<div class="">
-				<h2 style="font-weight:400;">Hi! I'm <b style="font-weight: 600">George Thayamkery.</b> I am a 17 year old high school student who codes.</h2>
+				<h2 style="font-weight:400;">Hi! I'm <b style="font-weight: 600">George Thayamkery.</b> I am a student who codes.</h2>
 				<h2 style="margin-top:40px;font-weight:400;">I have dabbled with <span style="color:#2196F3">HTML/JS</span>, <span style="color:#FF9800">Python</span>, <span style="color:#4CAF50">Node JS</span>, and more. I hope to create meaningful products and expand my knowledge in Computer Science.</h2>
 				<h4 style="font-weight:800; margin-top:50px; color: #666; margin-bottom: 0px;">CONTACT</h4>
 				<ul class="nav nav-pills hover" >
@@ -273,6 +360,10 @@
 		  ga('create', 'UA-103806137-1', 'auto');
 		  ga('send', 'pageview');
 
+
+		var stopRot = setInterval(function(){
+			document.getElementsByClassName("g-img")[0].style.transform = "rotate(" +(Math.floor(Math.random() * (6)) - 3)+ "deg)";
+		},250);
 		</script>
 	</body>
 </html>
