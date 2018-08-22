@@ -1,7 +1,7 @@
 ---
 title: graded
 ---
-# <img src="/imgs/graded_splash_bg.png" class="header-img"/>
+<img src="/imgs/graded_splash_bg.png" class="header-img"/>
 
 Graded was a mobile application that I made in the beginning of my sophomore year of high school (Sept. 2015) that allowed students to check there grades easily on their phone rather than using the unresponsive website. This app taught me a lot about deploying production software, the HTTP/HTTPS protocol, running linux servers, web scraping, selling ads, and much more.
 

@@ -9,14 +9,16 @@
     <style>
         .header-img{
             margin-left: -16px;
-            margin-right:  -16px;
+            margin-right: -16px;
             width: calc(100% + 32px);
+            max-width: 200% !important;
         }
     </style>
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
+        <h4><a href="https://geooot.com">geooot.com</a></h4>
       {{ content }}
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
