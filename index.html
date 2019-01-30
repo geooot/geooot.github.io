@@ -11,15 +11,29 @@
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@geooot_">
 		<meta name="twitter:title" content="Hi I am George Thayamkery">
-		<meta name="twitter:description" content="I am a 17 year old high school student who codes.">
+		<meta name="twitter:description" content="I am a 18 year old high school student who codes.">
 		<meta name="twitter:image" content="https://avatars3.githubusercontent.com/u/7832610?v=3&s=400">
 		<link rel="stylesheet" href="css/bootstrap.min.css"></link>
 		<link rel="stylesheet" href="css/animate.css"></link>
-		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<meta name="theme-color" content="#4CAF50">
-		<meta name="msapplication-navbutton-color" content="#4CAF50">
-		<meta name="apple-mobile-web-app-status-bar-style" content="#4CAF50">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="msapplication-navbutton-color" content="#ffffff">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
 		<script src="https://use.fontawesome.com/86c6a7b69b.js"></script>
 		<style>
 		body{
@@ -50,7 +64,9 @@
 			.hover > li > a:hover {
 				color:#60e800;
 				background-color: transparent;
-				border-radius: 4px;
+				border-bottom: #60e800 1px solid;
+    			border-radius: 0;
+				filter: url("#turbulence-1");
 			}
 			.hover > li > a:focus {
 				background-color: transparent;
@@ -58,7 +74,8 @@
 			}
 			.hover > li > a {
 				color:#000;
-				border-radius: 4px;
+				border-bottom: #ddd 1px dashed;
+    			border-radius: 0;
 			}
 			.hover > li {
 				font-size:24px;
@@ -67,6 +84,7 @@
 			.g-img{
 				width: 200px;
 				filter: url("#turbulence-1");
+				transform: rotate(185deg) translateY(5px) scaleX(-1);
 			}
 			.twitter > a{
 				background-color:#1A93DD !important;
@@ -75,6 +93,7 @@
 			.twitter > a:hover{
 				background-color:#1582c1 !important;
 				color:white !important;
+				filter: url("#turbulence-1");
 			}
 			.email > a{
 				background-color:#EC1E10 !important;
@@ -83,6 +102,7 @@
 			.email > a:hover{
 				background-color:#ce180e !important;
 				color:white !important;
+				filter: url("#turbulence-1");
 			}
 			.btn-primary {
 				color: #fff;
@@ -142,10 +162,6 @@
 				line-height: 32px;
 				font-size: 14px;
 			}
-
-			.logoType{
-				align-self:center
-			}
 			.pad{
 				margin-top:50px;
 			}
@@ -153,13 +169,13 @@
 				.pad{
 				margin-top:25px;
 				}
-				.logoType h2{
-				font-size: 20px !important;
-				}
 				.jumbotron{
 				border-radius: 0px !important;
 				margin-bottom: 0px;
 				background-image: none;
+				}
+				h1, h2{
+					font-size: 24px;
 				}
 			}
 			@media only screen and (max-device-width: 1280px) {
@@ -190,7 +206,7 @@
 			}
 		</style>
 	</head>
-	<body style=''>
+	<body style='overflow-x: hidden'>
 		<svg display="none">
 			<defs>
 				<filter id="turbulence-1">
@@ -201,22 +217,23 @@
 				</filter>
 			</defs>
 		</svg>
-		<div class="row bg" style="margin-left:0px;margin-right:0px;">
-			<div class="center heading">
-				<img src="imgs/pp_vector.svg" class="g-img"/>
-				<br>
-				<ul class="nav nav-pills hover" style="margin-top: 20px;">
-					<li role="presentation" >
-						<a target="_blank" href="https://www.linkedin.com/in/georgebt" class="white">LinkedIn</a>
-					</li>
-					<li role="presentation" >
-						<a target="_blank" href="https://github.com/geooot/" class="white">GitHub</a>
-					</li>
-					<li role="presentation" >
-						<a target="_blank" href="https://github.com/geooot/geooot.github.io/raw/master/Resume_2018.pdf" class="white">Resume</a>
-					</li>
-				</ul>
-
+		<div class="bg" style="margin-left:0px;margin-right:0px;">
+			<div class="container">
+				<div class="row">
+					<img src="imgs/pp_vector.svg" class="g-img"/>
+					<br>
+					<ul class="nav nav-pills hover" style="margin-top: 20px;">
+						<li role="presentation" >
+							<a target="_blank" href="https://www.linkedin.com/in/georgebt" class="white">LinkedIn</a>
+						</li>
+						<li role="presentation" >
+							<a target="_blank" href="https://github.com/geooot/" class="white">GitHub</a>
+						</li>
+						<li role="presentation" >
+							<a target="_blank" href="https://github.com/geooot/geooot.github.io/raw/master/Resume_2018.pdf" class="white">Resume</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="container container-fluid" style="margin-top:15px;min-width:0px;">
@@ -225,7 +242,7 @@
 				<h2 style="margin-top:40px;font-weight:400;">I am proficient in <span style="color:#FF9800">Python</span>, <span style="color:#e9242e">Java</span>, <span style="color:#4CAF50">Node JS</span>, <span style="color:#25d8fd">React</span>, Next.JS, <span style="color:#f38226">Firebase</span>, and more. I hope to create meaningful products and expand my knowledge in Computer Science.</h2>
 				<h2 style="margin-top:40px;font-weight:400;">I'm an undergrad computer science student at <span style="color: rgb(80,0,0)">Texas A&M University, College Station</span>.</h2>
 				<h4 style="font-weight:800; margin-top:50px; color: #666; margin-bottom: 0px;">CONTACT</h4>
-				<ul class="nav nav-pills hover" >
+				<ul class="nav nav-pills" >
 					<li role="presentation" class="twitter" style="font-size:16px; margin-top:10px; margin-right: 5px;" >
 						<a target="_blank" href="http://twitter.com/geooot_" class="white"><i class="fa fa-twitter fa-lg"></i>&nbsp @geooot_</a>
 					</li>
@@ -237,6 +254,13 @@
 				<h4 style="font-weight:800; margin-top:100px; color: #666; margin-bottom: 15px;">FEATURED PROJECTS</h4>
 				
 				<div class="row" >
+					<div class="jumbotron codescrim row">
+						<div class="col-md-8 col-sm-12">
+								<img src="imgs/codescrim_logo_light.png" class="logo" width="250"/>
+								<p class="desc">Allowing schools, communities, and computer science lovers to make teams and host coding competitions. Currently this is being piloted by teachers and students from 10+ schools in the Dallas area. In 2017, Codescrim was the primary tool that was used by 100+ contestants in <a href="https://codecember.com" style="color: white">The Codecember Coding Competition.</a></p>
+								<p><a class="btn btn-primary btn-lg" href="https://codescrim.com">Learn More</a></p>
+						</div>
+					</div>
 					<div class="jumbotron graded row">
 						<div class="col-md-8 col-sm-12">
 							  <img src="/imgs/gradedLogo_white.png" class="logo" width="250">
@@ -244,34 +268,30 @@
 							  <p><a class="btn btn-primary btn-lg" href="/graded" role="button">Learn more</a></p>
 						</div>
 					</div>
-					<div class="jumbotron codescrim row">
-						<div class="col-md-8 col-sm-12">
-							  <img src="imgs/codescrim_logo_light.png" class="logo" width="250"/>
-							  <p class="desc">Allowing schools, communities, and computer science lovers to make teams and host coding competitions. Currently this is being piloted by teachers and students from 10+ schools in the Dallas area. In 2017, Codescrim was the primary tool that was used by 100+ contestants in <a href="https://codecember.com" style="color: white">The Codecember Coding Competition.</a></p>
-							  <p><a class="btn btn-primary btn-lg" href="https://codescrim.com">Learn More</a></p>
-						</div>
-					</div>
 				</div>
 
 				<div class="row" style="margin-top: 10px;">
 					<div class="col-md-12">
 						<h4 style="font-weight:800; margin-top:25px; color: #666; margin-bottom: 15px;">RECENT ACTIVITIES</h4>
-						<p class="itm"><a target="_blank" href="https://nepris.com">[2018] Worked as a UI developer for Nepris.</a><p></p>
+						<p class="itm"><a target="_blank" href="/noted">[Tamuhack 2019] Won the MLH Best use of Google Cloud Platform award.</a><p></p>
+						<p class="itm"><a target="_blank" href="https://www.txamfoundation.com/News/Bryton-Praslicka-smart-bus-stops.aspx">[TAMU Fall 2018] Helping with Jade, a better bus app for Texas A&M.</a><p></p>
+						<p class="itm"><a target="_blank" href="https://engineering.tamu.edu/cse/index.html">[TAMU Fall 2018] Started my college journey at Texas A&M #whoop.</a><p></p>
+						<p class="itm"><a target="_blank" href="https://nepris.com">[Nepris Summer 2018] Worked as a UI developer for Nepris.</a><p></p>
 						<p class="itm"><a target="_blank" href="/project-lfg">[Senior Year] Made an app that connects gamers for a final project.</a><p>							
 						<p class="itm"><a target="_blank" href="/galaga">[Senior Year] Made a galaga clone using XNA for my video game design class.</a><p>							
 						<p class="itm"><a target="_blank" href="/burginator">[Senior Year] Made a food related video game using java.</a><p>
 						<p class="itm"><a target="_blank" href="https://codecember.com">[Senior Year] Organized Codecember 2017, a coding competition for students.</a><p>														
 						<p class="itm"><a target="_blank" href="https://shopsavvy.com">[Purch] Programmed features for the ShopSavvy iOS app.</a><p>							
 						<p class="itm"><a target="_blank" href="/qsearcher">[qsearcher] Made a small quizlet term scraper.</a><p>
-						<p class="itm"><a target="_blank" href="https://cs.utdallas.edu/battle-of-the-brains-spring-17-story/">[UTD Battle of the Brains] Participated in UTD Spring Coding competition</a><p>
+						<p class="itm"><a target="_blank" href="https://cs.utdallas.edu/battle-of-the-brains-spring-17-story/">[UTD Battle of the Brains] Participated in UTD Spring Coding competition.</a><p>
 						<p class="itm"><a target="_blank" href="http://codeday.org/">[CodeDay 2017] Won "0 to 60" award.</a><p>
 						<p class="itm"><a target="_blank" href="https://purch.com">[Purch] Made a framework for generating media apps using Cordova.</a><p>
-						<p class="itm"><a target="_blank" href="/ButtonSmash/index.html">[CodeDay 24hr Code Jam] Made the ridiculous game, ButtonSmash</a><p>
-						<p class="itm"><a target="_blank" href="https://github.com/RHSCSTeam/cs-points">[RHS CS Team] Made a Programming point system </a><p>
-						<p class="itm"><a target="_blank" href="https://sites.google.com/friscoisd.org/frisco-firstbytes/home">[RHS CS Team] Competed in Frisco ISD FirstBytes</a><p>
-						<p class="itm"><a target="_blank" href="/graded">[Graded] Created Graded, A better way to check grades  </a></span><p>
-						<p class="itm"><a target="_blank" href="http://nepris.com">[Nepris] Interned at Nepris Inc and helped design web pages  </a><p>
-						<p class="itm"><a target="_blank" href="/AndroSensorGTK">[AndroSensorGTK] A small python script that imported gyroscope rotation data into Blender 3d  </a><p>
+						<p class="itm"><a target="_blank" href="/ButtonSmash/index.html">[CodeDay 24hr Code Jam] Made the ridiculous game, ButtonSmash.</a><p>
+						<p class="itm"><a target="_blank" href="https://github.com/RHSCSTeam/cs-points">[RHS CS Team] Made a Programming point system. </a><p>
+						<p class="itm"><a target="_blank" href="https://sites.google.com/friscoisd.org/frisco-firstbytes/home">[RHS CS Team] Competed in Frisco ISD FirstBytes.</a><p>
+						<p class="itm"><a target="_blank" href="/graded">[Graded] Created Graded, A better way to check grades.  </a></span><p>
+						<p class="itm"><a target="_blank" href="http://nepris.com">[Nepris] Interned at Nepris Inc and helped design web pages.  </a><p>
+						<p class="itm"><a target="_blank" href="/AndroSensorGTK">[AndroSensorGTK] A small python script that imported gyroscope rotation data into Blender 3D.  </a><p>
 						<p class="itm"><a target="_blank" href="https://github.com/geooot/InfinityStairs">[CS1] Created InfinityStairs, a small yet fun java game. </a><p>
 					</div>
 				</div>
