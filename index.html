@@ -38,7 +38,7 @@
 		<style>
 			body{
 				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-				/**transition: filter 1s, background-color 1s;**/
+				transition: filter 0.25s, background-color 0.25s;
 				background-color: #fff;
 				filter: invert(0);
 			}
@@ -57,7 +57,7 @@
 			}
 
 			.dont-invert {
-				/* transition: filter 1s; */
+				transition: filter 0.25s;
 			}
 			.center{
 				text-align:center;
@@ -239,7 +239,7 @@
 			<div class="container">
 				<div class="row">
 					<div>
-						<img src="imgs/pp_vector.svg" onclick="stupidLazyAssDarkModeToggle()" class="g-img"/>
+						<img src="imgs/pp_vector.svg" onclick="stupidLazyAssDarkModeToggle()" class="g-img" style="cursor: pointer;"/>
 					</div>
 					<br>
 					<ul class="nav nav-pills hover" style="margin-top: 20px;">
@@ -250,7 +250,7 @@
 							<a target="_blank" href="https://github.com/geooot/" class="white">GitHub</a>
 						</li>
 						<li role="presentation" >
-							<a target="_blank" href="/resume/resume.pdf?t=16002218115" class="white">Resume</a>
+							<a target="_blank" href="/resume/resume.pdf?t=16002219115" class="white">Resume</a>
 						</li>
 					</ul>
 				</div>
@@ -290,10 +290,17 @@
 				<div class="row" style="margin-top: 10px;">
 					<div class="col-md-12">
 						<h4 style="font-weight:800; margin-top:25px; color: #666; margin-bottom: 15px;">RECENT ACTIVITIES</h4>
+						<p class="itm"><a target="_blank" href="https://www.youtube.com/watch?v=aCBcF_YtlRU">[Solarbitrage 2022] Created an arbitrage trading bot that trades cryptocurrency on the Solana Blockchain. Created as part of the Senior Capstone course I took in Spring 2022.</a><p></p>
+						<p class="itm"><a target="_blank" href="https://www.youtube.com/watch?v=aCBcF_YtlRU">[Highlight 2022] Started work as a part-time, full stack engineer at Highlight.</a><p></p>
+						<p class="itm"><a target="_blank" href="https://photos.google.com/share/AF1QipOgU1UnhVK9oqiEEeR37hCQp5bYarqpib0XC8jiG4FDKDr60fhRbJ-mcawGKGSF5g?key=c294aXplV3AxeW5kS0VIWm5RYVpWZzloZHNuMjBn">[TAMU Datathon 2021] Lead a Data Science/Machine Learning Hackathon for 400 students.</a><p></p>
+						<p class="itm"><a target="_blank" href="https://www.youtube.com/watch?v=LGGDWgVHJPI">[HowdyHack 2021] Hosted a workshop on creating Web APIs with Python.</a><p></p>
+						<p class="itm"><a target="_blank" href="https://amazon.jobs/en/teams/lab126">[Amazon 2021] Interned at Amazon on the Fire OS Multimedia Team (Lab 126). Created a camera driver for Fire TV devices that allows customers to use wireless cameras with third party camera/video-conferencing apps.</a><p></p>
+						<p class="itm"><a target="_blank" href="https://www.youtube.com/watch?v=g9PerBxSc5E">[LyRec 2021] Created a song recommender using Lyrics for the Recommender Systems course I took in Spring 2021.</a><p></p>
+						<p class="itm"><a target="_blank" href="https://www.audiblecareers.com/technology">[Audible 2020] Interned at Audible on the Voice Experience Team. Created an Alexa Skill to let people discover deals from Audible.</a><p></p>
 						<p class="itm"><a target="_blank" href="/helping-eye">[TAMUhack 2020] Top 6 Projects, Winner of Microsoft Sponsor Challenge, and Winner of Gartner Sponsor Challenge.</a><p></p>
 						<p class="itm"><a target="_blank" href="/fullhouse">[HackTX 2019] Won the PwC Sponsor Challenge.</a><p></p>
 						<p class="itm"><a target="_blank" href="/tamudatathon2019">[TAMUDatathon 2019] Created models to predict rig failures for the ConocoPhilips challenge.</a><p></p>
-						<p class="itm"><a target="_blank" href="https://www.amazon.com/b/?ie=UTF8&node=18145289011&ref_=topnav_storetab_adbl">[Audible 2019] Interned at Audible in the Homestead team. Worked on audiobook discovery on amazon.com</a><p></p>
+						<p class="itm"><a target="_blank" href="https://www.audiblecareers.com/technology">[Audible 2019] Interned at Audible on the Homestead team. Worked on audiobook discovery on amazon.com</a><p></p>
 						<p class="itm"><a target="_blank" href="https://tamuctf.com">[TAMUctf 2019] Won 1st place in freshman bracket, 8th out of all TAMU students.</a><p></p>
 						<p class="itm"><a target="_blank" href="/noted">[TAMUhack 2019] Won the MLH Best use of Google Cloud Platform award.</a><p></p>
 						<p class="itm"><a target="_blank" href="https://www.txamfoundation.com/News/Bryton-Praslicka-smart-bus-stops.aspx">[TAMU Fall 2018] Helping with Jade, a better bus app for Texas A&M.</a><p></p>
@@ -347,9 +354,7 @@
 			function step() {
 				document.querySelector("#feturbulence").baseFrequencyY.baseVal = Math.random() / 10
 				document.querySelector("#feturbulence").baseFrequencyX.baseVal = Math.random() / 10
-				setTimeout(() => {
-					requestAnimationFrame(step)
-				}, 16)
+				requestAnimationFrame(step);
 			}
 
 			requestAnimationFrame(step);
