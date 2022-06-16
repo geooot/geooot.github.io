@@ -11,13 +11,21 @@
             margin-left: -16px;
             margin-right: -16px;
             width: calc(100% + 32px);
-            max-width: 200% !important;
+            max-width: calc(100% + 32px); !important;
         }
+	body {
+	    line-height: 1.5;
+	    font-size: 18px;
+	}
+	.markdown-body {
+	    font-size: 18px !important;
+	    max-width: 40rem;
+	}
     </style>
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
+    <div class="container pb-5 px-3 my-5 markdown-body">
         <h4><a href="https://geooot.com">geooot.com</a></h4>
       {{ content }}
     </div>
