@@ -1,5 +1,6 @@
 ---
 title: "Home"
+hide_nav: true
 ---
 
 # George Thayamkery

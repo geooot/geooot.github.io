@@ -28,7 +28,9 @@
   </head>
   <body>
     <div class="container pb-5 px-3 my-5 markdown-body">
+{% if page.hide_nav %}
         <h4><a href="https://geooot.com">🏠 Home</a></h4>
+{% endif %}
       {{ content }}
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
