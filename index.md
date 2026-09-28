@@ -3,9 +3,9 @@ title: "Home"
 hide_nav: true
 ---
 
-# George Thayamkery
-
 <img src="/imgs/alaska.jpg" alt="A very nice picture of me in Alaska taken by my friend Piyush" class="header-img"/>
+
+## George Thayamkery
 
 I'm a full time Software Engineer. But before that, I've been programming as a hobby throughout high school and college.
 
